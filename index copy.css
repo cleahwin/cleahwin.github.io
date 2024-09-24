@@ -460,6 +460,60 @@ section .titl/*e::after{
     background: #e28f41!important;
 }
 
+/* Skills Section */
+#skills {
+    background-color: #f0f0f5;
+    padding: 60px 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.skill-category {
+    text-align: center;
+}
+
+.skill-category h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2E2252;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #2E2252;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: #e28f41;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        gap: 20px;
+    }
+}
+
+
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
