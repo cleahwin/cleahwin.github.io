@@ -21,5 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeInSections.forEach(section => {
         observer.observe(section);
     });
+    const toggles = document.querySelectorAll(".toggle-btn");
+    toggles.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
 });
 

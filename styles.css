@@ -87,35 +87,42 @@ nav ul li a:hover {
     gap: 20px;
 }
 
-.btn-primary, .btn-secondary {
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
 
-.btn-primary {
-    background-color: #e28f41;
-    color: white;
+.btn-primary, .btn-secondary, .btn-tertiary {
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 180px;
 }
 
-.btn-primary:hover {
-    background-color: white;
-    color: #e28f41;
-}
 
+/* Secondary */
 .btn-secondary {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
 }
 
 .btn-secondary:hover {
-    background-color: white;
-    color: #2E2252;
+  background-color: #e28f41;
+  color: #2E2252;
 }
+
+
+
+
 
 /* Background Animation */
 @keyframes moving-background {
@@ -726,3 +733,74 @@ footer {
     color: #ffd700;
   }
   
+
+
+  /* Study Notes Section */
+#study-notes {
+  padding: 60px 20px;
+  background-color: #f5f5ff;
+}
+
+.study-notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.note-category {
+  background-color: white;
+  border: 2px solid #2E2252;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.note-category:hover {
+  transform: translateY(-5px);
+}
+
+.note-category h3 {
+  font-size: 24px;
+  color: #2E2252;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.note-content {
+  display: none;
+  margin-top: 15px;
+}
+
+.note-content iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Toggle button styles */
+.toggle-btn {
+  background-color: #e28f41;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #2E2252;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .note-content iframe {
+      height: 300px;
+  }
+}
