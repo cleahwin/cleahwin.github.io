@@ -13,7 +13,7 @@
 <body>
     <header style="position: fixed; top: 0; width: 100%; z-index: 1000; background-color: #201637; color: white; height: 70px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px;">
         <nav class="navbar">
-          <h1 class="logo" style="margin: 0;"><a href="/index.html" style="text-decoration: none; color: white;">Cleah Winston</a></h1>
+          <h1 class="logo" style="margin: 0;"><a href="/" style="text-decoration: none; color: white;">Cleah Winston</a></h1>
           <ul style="list-style: none; display: flex; gap: 20px; margin: 0;">
             <li><a href="#publications" >Publications</a></li>
             <li><a href="#projects" >Projects</a></li>
@@ -31,13 +31,13 @@
       <section class="split-screen">
         <div class="left-section">
           <h1>Cleah Winston</h1>
-          <p>B.S. in Computer Science @ University of Washington, Seattle (June 2026)</p>
+          <p>B.S./M.S. in Computer Science @ University of Washington, Seattle (June 2027)</p>
           <p>Robotics Research Student @ UW Robotics</p>
           <p>Software Developer @ Neurophys</p>
           <p>Teaching Assistant @ Paul Allen School, UW</p>
           <div class="cta-buttons">
             <a href="#projects" class="btn-secondary">View My Work</a>
-            <a href="WinstonCleah24.pdf" class="btn-secondary" target="_blank">Download Resume</a>
+            <a href="ResumeWinstonCleah.pdf" class="btn-secondary" target="_blank">Download Resume</a>
             <!-- <a href="study_notes.html" class="btn-secondary">Study Notes</a> -->
           </div>
           
@@ -45,6 +45,7 @@
             <a href="https://github.com/cleahwin" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="mailto:cleahw@uw.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
             <a href="https://scholar.google.com/citations?user=g5P1vpQAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://www.linkedin.com/in/cleah-w-8897a3242/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
         <div class="right-section">
@@ -113,16 +114,26 @@
         <h2>Research Projects</h2>
         <div class="project-container scrollable">
             <div class="project">
-                <h3>Learning Recovery-Based Robot Manipulation Policies on Out-of-Distribution
-                    Tasks with Diffusion and Offline RL</h3>
+                <h3>LLM-based Pain Logging App</h3>
+                <h5>January 2025 - Present</h5>
+                <div class="project-details">
+                    <span class="tag"><i class="fas fa-building"></i> UW, Stanford University, University of Pennslyvania</span>
+                    <span class="tag"><i class="fa fa-link"></i> <a href="https://samanthahealth.web.app/" target="_blank" rel="noopener noreferrer">More info.</a></span>   
+
+                </div>
+                <p>Developed a pain logging app using Gemini models to process user inputs, display structured pain events, and visualize pain metrics in an intuitive UI. This platform allows users to simply enter in any event (pain levels, medication intake, diet, etc.) and the LLM will categorize events.</p>
+            </div>
+            <div class="project">
+                <h3>Using Offline RL to Robustify Imitation Learning with Non-Expert Data</h3>
                 <h5>June 2024 - Present</h5>
                 <div class="project-details">
                     <span class="tag"><i class="fas fa-building"></i> Robot Learning Lab, WEIRD Lab @ UW</span>
+                    <span class="tag"><i class="fa fa-link"></i> <a href="" target="_blank" rel="noopener noreferrer">More info.</a></span>
                     <!-- <span class="tag"><i class="fas fa-file-alt"></i> [Details]</span>
                     <span class="tag"><i class="fas fa-trophy"></i> Awards: [Details]</span>                 -->
 
                 </div>
-                <p>In collaboration with the RLL & WEIRD Labs, I am working on training reinforcement learning (RL) and diffusion-based models for recovery tasks on for robot manipulation tasks. We use data from the Franka Emika robot arm.</p>
+                <p>Enhanced robot manipulation by integrating offline reinforcement learning with imitation learning to leverage non-expert and suboptimal demonstrations. By enforcing Lipschitz continuity on the behavior policy and widening the action space of the data with data augmnetation, stitching between expert and non-expert states was achieved.</p>
             </div>
             <div class="project">
                 <h3>Large Language Models for Clinical Predictions</h3>
@@ -252,6 +263,11 @@
             <h3>Neurophys [Software Developer]</h3>
             <h5>Aug. 2024 - Present</h5>
             <p>I am desigining AI-based technology for developing customized, at-home rehabilitation plans for patients recovering from neuro deficits.</p>
+        </div>
+        <div class="experience">
+            <h3>Supio [Software Engineering Intern]</h3>
+            <h5>June 2025 - Aug. 2025</h5>
+            <p>I contributed to developing a platform that allows internal users to easily fine-tune LLMs. Using AWS S3 for data storage and AWS EC2 instances for training, we abstracted away the complications of data generation, training, and evaluationg. </p>
         </div>
         <div class="experience">
             <h3>Paul Allen School of Computer Science [Teaching Assistant]</h3>

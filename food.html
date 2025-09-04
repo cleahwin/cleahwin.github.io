@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cleah's Kitchen Gallery</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .tag-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .tag {
+      padding: 0.4rem 1rem;
+      background: #ddd;
+      border-radius: 20px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .tag.active {
+      background: #99ccff;
+      color: black;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card .info {
+      padding: 1rem;
+    }
+    .card .title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .card .date {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cleah's Kitchen Gallery</h1>
+
+  <div class="tag-bar" id="tagBar"></div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <script>
+    const foodItems = [
+      {
+        title: "Blueberry Pie",
+        date: "2025-05-12",
+        image: "images/logo.png",
+        tags: ["Pie", "Fruit"]
+      },
+      {
+        title: "Spiced Chicken Roast",
+        date: "2025-06-01",
+        image: "images/rabbits.jpg",
+        tags: ["Chicken", "Dinner"]
+      },
+      {
+        title: "Chocolate Chip Cookies",
+        date: "2025-04-22",
+        image: "images/W.jpg",
+        tags: ["Cookie", "Chocolate"]
+      },
+      {
+        title: "Rustic Sourdough Bread",
+        date: "2025-03-15",
+        image: "images/Trees.jpg",
+        tags: ["Bread", "Rustic"]
+      },
+      // Add more items here!
+    ];
+
+    const tagBar = document.getElementById("tagBar");
+    const gallery = document.getElementById("gallery");
+    const activeTags = new Set();
+
+    const allTags = Array.from(
+      new Set(foodItems.flatMap(item => item.tags))
+    ).sort();
+
+    function renderTags() {
+      tagBar.innerHTML = '';
+      allTags.forEach(tag => {
+        const el = document.createElement('div');
+        el.textContent = tag;
+        el.className = 'tag';
+        el.onclick = () => {
+          el.classList.toggle('active');
+          if (activeTags.has(tag)) {
+            activeTags.delete(tag);
+          } else {
+            activeTags.add(tag);
+          }
+          renderGallery();
+        };
+        tagBar.appendChild(el);
+      });
+    }
+
+    function renderGallery() {
+      const filtered = foodItems.filter(item =>
+        activeTags.size === 0 || [...activeTags].every(tag => item.tags.includes(tag))
+      );
+
+      gallery.innerHTML = '';
+      filtered.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="${item.image}" alt="${item.title}" />
+          <div class="info">
+            <div class="title">${item.title}</div>
+            <div class="date">${item.date}</div>
+          </div>
+        `;
+        gallery.appendChild(card);
+      });
+    }
+
+    renderTags();
+    renderGallery();
+  </script>
+
+</body>
+</html>
