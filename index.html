@@ -7,7 +7,7 @@
     <title>Cleah Winston</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="images/W.png" type="image/png">
+    <link rel="icon" href="images/W.jpg" type="image/jpg">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -31,32 +31,52 @@
       <section class="split-screen">
         <div class="left-section">
           <h1>Cleah Winston</h1>
-          <p>B.S./M.S. in Computer Science @ University of Washington, Seattle (June 2027)</p>
+          <p>B.S./M.S. in Computer Science @ University of Washington</p>
           <p>Robotics Research Student @ UW Robotics</p>
-          <p>Software Developer @ Neurophys</p>
           <p>Teaching Assistant @ Paul Allen School, UW</p>
-          <div class="cta-buttons">
-            <a href="#projects" class="btn-secondary">View My Work</a>
-            <a href="ResumeWinstonCleah.pdf" class="btn-secondary" target="_blank">Download Resume</a>
-            <!-- <a href="study_notes.html" class="btn-secondary">Study Notes</a> -->
-          </div>
+          <!-- <div class="profile-image-container">
+            <img src="cleahwinston.jpg" alt="Cleah Winston" class="profile-image">
+          </div> -->
+          
           
           <div class="social-icons">
             <a href="https://github.com/cleahwin" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="mailto:cleahw@uw.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
             <a href="https://scholar.google.com/citations?user=g5P1vpQAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="ResumeWinstonCleah.pdf" aria-label="Resume" target="_blank"><i class="fas fa-file-pdf"></i></a>
             <a href="https://www.linkedin.com/in/cleah-w-8897a3242/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
         <div class="right-section">
           <h2>About Me</h2>
-          <p>I'm an undergraduate at the University of Washington, Seattle, pursuing a B.S. in Computer Science with a minor in Business Administration. I conduct research on on reinforcement learning and robotics, advised by Abhishek Gupta, where I focus on robustifying imitation learning for manipulation tasks. I'm also exploring how large language models can be applied in healthcare to enhance the clinical workflow and patient care. Broadly, I'm passionate about using AI to drive real-world impact and improve the efficiency of complex systems.</p>
+          <p>I'm an undergraduate at the University of Washington, Seattle, pursuing a B.S./M.S. in Computer Science with a minor in Business Administration. I conduct research on reinforcement learning and robotics, advised by Abhishek Gupta. I'm interested in making robot policies that are sample efficient and use data effectively, whether it be through utilization of non-expert data or through combining offline and online data. I've also explored using large language models to enhance the clinical workflow and patient care. Broadly, I'm passionate about using AI to drive real-world impact and improve the efficiency of complex systems.</p>
         </div>
       </section>
 
     <section id="publications" class="fade-in-section">
         <h2>Publications</h2>
         <div class="publications-list scrollable">
+            <div class="publication" data-has-video="true">
+                <div class="publication-media">
+                    <div class="publication-image">
+                        <img src="images/rise.png" alt="RISE Project">
+                        <video class="publication-video" loop muted>
+                            <source src="images/Tipping_Two_Disturbance.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="publication-info">
+                    <h3>Using Non-Expert Data to Robustify Imitation Learning via Offline Reinforcement Learning</h3>
+                    <p><i>In Review, ICRA 2025</i></p>
+                    <p>Kevin Huang*, Rosario Scalise*, <b>Cleah Winston</b><span class="et-al">, et al. <a href="#" class="show-more">[show all]</a></span><span class="all-authors" style="display: none;">, Ayush Agrawal, Yunchu Zhang, Rohan Baijal, Markus Grotz, Byron Boots, Benjamin Burchfiel, Hongkai Dai, Masha Itkina, Paarth Shah, Abhishek Gupta <a href="#" class="show-less">[show less]</a></span></p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2510.19495" target="_blank">Paper</a>
+                        <a href="https://uwrobotlearning.github.io/RISE-offline/" target="_blank">Website</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="publication">
                 <div class="publication-image">
                     <img src="images/genai.png" alt="Medical Question-Generation for Pre-Consultation">
@@ -64,8 +84,10 @@
                 <div class="publication-info">
                     <h3>Medical Question-Generation for Pre-Consultation with LLM In-Context Learning</h3>
                     <p><i>GenAI4Health, NeurIPS 2024 Poster</i></p>
-                    <p>Caleb Winston, <b>Cleah Winston</b>, Claris Winston, Chloe Winston</p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=g5P1vpQAAAAJ&citation_for_view=g5P1vpQAAAAJ:2osOgNQ5qMEC" target="_blank">Google Scholar</a>
+                    <p>Caleb Winston, <b>Cleah Winston</b><span class="et-al">, et al. <a href="#" class="show-more">[show all]</a></span><span class="all-authors" style="display: none;">, Claris Winston, Chloe Winston <a href="#" class="show-less">[show less]</a></span></p>
+                    <div class="publication-links">
+                        <a href="https://openreview.net/forum?id=du26Irf5kE" target="_blank">Paper</a>
+                    </div>
                 </div>
             </div>
     
@@ -76,8 +98,10 @@
                 <div class="publication-info">
                     <h3>Multimodal Clinical Prediction with Unified Prompts and Pretrained Large-Language Models</h3>
                     <p><i>IEEE International Conference on Healthcare Informatics, 2024</i></p>
-                    <p>Caleb Winston, Chloe Winston, Cailin Winston, Claris Winston, <b>Cleah Winston</b></p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=g5P1vpQAAAAJ&citation_for_view=g5P1vpQAAAAJ:u5HHmVD_uO8C" target="_blank">Google Scholar</a>
+                    <p>Caleb Winston, Chloe Winston, Cailin Winston<span class="et-al">, et al. <a href="#" class="show-more">[show all]</a></span><span class="all-authors" style="display: none;">, Claris Winston, <b>Cleah Winston</b> <a href="#" class="show-less">[show less]</a></span></p>
+                    <div class="publication-links">
+                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=g5P1vpQAAAAJ&citation_for_view=g5P1vpQAAAAJ:u5HHmVD_uO8C" target="_blank">Paper</a>
+                    </div>
                 </div>
             </div>
     
@@ -88,8 +112,10 @@
                 <div class="publication-info">
                     <h3>Repairing Brain-Computer Interfaces with Fault-Based Data Acquisition</h3>
                     <p><i>IEEE International Conference on Software Engineering, 2022</i></p>
-                    <p>Cailin Winston, Caleb Winston, Chloe N Winston, Claris Winston, <b>Cleah Winston</b>, Rajesh PN Rao, René Just</p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=g5P1vpQAAAAJ&citation_for_view=g5P1vpQAAAAJ:u-x6o8ySG0sC" target="_blank">Google Scholar</a>
+                    <p>Cailin Winston, Caleb Winston, Chloe N Winston<span class="et-al">, et al. <a href="#" class="show-more">[show all]</a></span><span class="all-authors" style="display: none;">, Claris Winston, <b>Cleah Winston</b>, Rajesh PN Rao, René Just <a href="#" class="show-less">[show less]</a></span></p>
+                    <div class="publication-links">
+                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=g5P1vpQAAAAJ&citation_for_view=g5P1vpQAAAAJ:u-x6o8ySG0sC" target="_blank">Paper</a>
+                    </div>
                 </div>
             </div>
     
@@ -100,8 +126,10 @@
                 <div class="publication-info">
                     <h3>Precisely Detecting and Resolving BCI Errors With Case Functions</h3>
                     <p><i>IEEE Engineering in Medicine & Biology Society, 2021</i></p>
-                    <p>Chloe N Winston, Cailin Winston, Caleb Winston, Claris Winston, <b>Cleah Winston</b>, Rajesh P N Rao</p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=g5P1vpQAAAAJ&citation_for_view=g5P1vpQAAAAJ:d1gkVwhDpl0C" target="_blank">Google Scholar</a>
+                    <p>Chloe N Winston, Cailin Winston, Caleb Winston<span class="et-al">, et al. <a href="#" class="show-more">[show all]</a></span><span class="all-authors" style="display: none;">, Claris Winston, <b>Cleah Winston</b>, Rajesh P N Rao <a href="#" class="show-less">[show less]</a></span></p>
+                    <div class="publication-links">
+                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=g5P1vpQAAAAJ&citation_for_view=g5P1vpQAAAAJ:d1gkVwhDpl0C" target="_blank">Paper</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,173 +139,158 @@
 
     
     <section id="projects" class="fade-in-section">
-        <h2>Research Projects</h2>
-        <div class="project-container scrollable">
-            <div class="project">
-                <h3>LLM-based Pain Logging App</h3>
-                <h5>January 2025 - Present</h5>
-                <div class="project-details">
-                    <span class="tag"><i class="fas fa-building"></i> UW, Stanford University, University of Pennslyvania</span>
-                    <span class="tag"><i class="fa fa-link"></i> <a href="https://samanthahealth.web.app/" target="_blank" rel="noopener noreferrer">More info.</a></span>   
-
-                </div>
-                <p>Developed a pain logging app using Gemini models to process user inputs, display structured pain events, and visualize pain metrics in an intuitive UI. This platform allows users to simply enter in any event (pain levels, medication intake, diet, etc.) and the LLM will categorize events.</p>
-            </div>
-            <div class="project">
-                <h3>Using Offline RL to Robustify Imitation Learning with Non-Expert Data</h3>
-                <h5>June 2024 - Present</h5>
-                <div class="project-details">
-                    <span class="tag"><i class="fas fa-building"></i> Robot Learning Lab, WEIRD Lab @ UW</span>
-                    <span class="tag"><i class="fa fa-link"></i> <a href="" target="_blank" rel="noopener noreferrer">More info.</a></span>
-                    <!-- <span class="tag"><i class="fas fa-file-alt"></i> [Details]</span>
-                    <span class="tag"><i class="fas fa-trophy"></i> Awards: [Details]</span>                 -->
-
-                </div>
-                <p>Enhanced robot manipulation by integrating offline reinforcement learning with imitation learning to leverage non-expert and suboptimal demonstrations. By enforcing Lipschitz continuity on the behavior policy and widening the action space of the data with data augmnetation, stitching between expert and non-expert states was achieved.</p>
-            </div>
-            <div class="project">
-                <h3>Large Language Models for Clinical Predictions</h3>
-                <h5>Oct. 2023 – Sept. 2024</h5>
-                <div class="project-details">
-                    <span class="tag"><i class="fas fa-building"></i> UW, Stanford University, University of Pennslyvania</span>
-                    <span class="tag"><i class="fas fa-file-alt"></i> 2024 International Conference of Health Informatics, 2024 GenAI4Health (NeurIPS)</span>
-                    <span class="tag"><i class="fas fa-trophy"></i> 2nd @ MD Plus Datathon on value-based care</span>                
-
-                </div>
-                <p>Along with a team of researchers, I developed a chatbot which collects patient information to curate a history of present illness (HPI).</p>
-            </div>
-            <div class="project">
-                <h3>Improving Robotic Car Navigation Algorithms</h3>
-                <h5>Sept. 2022 – May 2024</h5>
-                <div class="project-details">
-                    <span class="tag"><i class="fas fa-building"></i> Affiliation: Robot Learning Lab @ UW</span>
-                    <span class="tag"><i class="fas fa-file-alt"></i> 2024 Undergraduate Research Symposium</span>
-                    <!-- <span class="tag"><i class="fas fa-trophy"></i> Awards: [Details]</span>                 -->
-
-                </div>
-                <p>I trained convolutional neural networks to predict steering angles to follow a road from simulated data from AirSim. I then investigated whether robust training can be achieved with simulated data and less real data, collected from MuSHR cars.</p>
-            </div>
-            <div class="project">
-                <h3>Augmented Reality for Physical Therapy</h3>
-                <h5>Sept. 2023 – Feb. 2024</h5>
-                <div class="project-details">
-                    <span class="tag"><i class="fas fa-building"></i> UW CSE, Foster School of Business, UW Medicine</span>
-                    <!-- <span class="tag"><i class="fas fa-file-alt"></i> Publication: [Details]</span> -->
-                    <span class="tag"><i class="fas fa-trophy"></i> Finalist at Holloman Health Innovation Challenge</span>                
-
-                </div>
-                <p>Along with my team, we developed a prototype for a AR-based system using the Meta Quest Pro that creates a more immersive and interactive form of doing at-home physical therapy. We created a business plan for our product and pitched at the 2024 Holloman Health Innovation Challenge, UW.</p>
-            </div>
-            <div class="project">
-                <h3>Repairing Brain-Computer Interfaces (BCI) with Fault-Based Data Acquisition</h3>
-                <h5>April 2021 – May 2022</h5>
-                <div class="project-details">
-                    <span class="tag"><i class="fas fa-building"></i> UW CSE</span>
-                    <span class="tag"><i class="fas fa-file-alt"></i> 2022 International Conference on Software Engineering</span>
-                    <!-- <span class="tag"><i class="fas fa-trophy"></i> Awards: [Details]</span>                 -->
-                    <span class="tag"><i class="fa fa-link"></i> <a href="https://www.researchgate.net/publication/362967881_Repairing_brain-computer_interfaces_with_fault-based_data_acquisition" target="_blank" rel="noopener noreferrer">Publication.</a></span>              
-
-
-                </div>
-                <p>We developed a technique to debug brain-computer interfaces real time using focused data acquisition and data labeling techniques. I replicated a cursor-manipulation neural decoder to evaluate our system.</p>
-            </div>
-            <div class="project">
-                <h3>Assessing Neurostimulation as Therapy for Spinal Cord Injury</h3>
-                <h5>June 2021 – September 2021</h5>
-                <div class="project-details">
-                    <span class="tag"><i class="fas fa-building"></i> Restorative Technologies Laboratory, UW</span>
-                    <!-- <span class="tag"><i class="fas fa-file-alt"></i> Publication: [Details]</span> -->
-                    <!-- <span class="tag"><i class="fas fa-trophy"></i> Awards: [Details]</span>                 -->
-                    <span class="tag"><i class="fa fa-link"></i> <a href="https://iopscience.iop.org/article/10.1088/1741-2552/acec13" target="_blank" rel="noopener noreferrer">Publication.</a></span>              
-
-
-                </div>
-                <p>Using ImageJ software, I analyzed images of spinal cord sections to quantify the recovery of vasculature in injured sites following spinal cord injury in rats.We found that optogenetic neurostimulation improved vasculature recovery </p>
-            </div>
-            <div class="project">
-                <h3>Modeling the Human Haptic Code</h3>
-                <h5>Sept. 2020 – March 2021</h5>
-                <div class="project-details">
-                    <span class="tag"><i class="fas fa-building"></i>Courtine Paschall, UW BioEngineering</span>
-                    <!-- <span class="tag"><i class="fas fa-file-alt"></i> Publication: [Details]</span> -->
-                    <span class="tag"><i class="fas fa-trophy"></i> 1st @ WSSEF 2021, US Air Force Award, 2nd in Software and Embedded Systems @ 2021 CRSEF</span>                
-                    <span class="tag"><i class="fa fa-link"></i> <a href="https://www.cobracoders.org/haptic-code" target="_blank" rel="noopener noreferrer">More info.</a></span>              
-
-                </div>
-                <p>I developed machine learning models to predict objects touched/imagined using EEG data I collected from a user study. I then developed a conditional variational autoencoder to predict the neural data given the tactic labels with the gaol of improving prosthetic neural encoding.</p>
-            </div>
-            <div class="project">
-                <h3>Detecting Driver Distraction Using Neural Decoding and ML</h3>
-                <h5>Dec. 2019 – May 2020</h5>
-                <div class="project-details">
-                    <span class="tag"><i class="fas fa-building"></i> Courtnie Paschall, UW BioEngineering</span>
-                    <!-- <span class="tag"><i class="fas fa-file-alt"></i> Publication: [Details]</span> -->
-                    <span class="tag"><i class="fas fa-trophy"></i> 1st @ WSSEF 2020, 2020 Student Scholar Symposium (Sigma Xi)</span> 
-                    <span class="tag"><i class="fa fa-link"></i> <a href="https://www.cobracoders.org/driver-distraction" target="_blank" rel="noopener noreferrer">More info.</a></span>              
-                 </div>
-                <p>I designed a ML-based system to predict distracted driving from EEG data. I collected data through a user study where subjects were placed in distracting situations while operating a virtual car. I trained regression models and neural network decoders.</p>
-            </div>
-        </div>
-    
-        <h2>Software Projects</h2>
-        <div class="project-container scrollable">
-            <div class="project">
-                <h3>MyScoliCare: An App for Scoliosis Care</h3>
-                <h5>Nov. 2018 – May 2019</h5>
-                <div class="project-details">
-                    <!-- <span class="tag"><i class="fas fa-building"></i> Affiliation: Robot Learning Lab, WEIRD Lab at UW</span> -->
-                    <span class="tag"><i class="fas fa-file-alt"></i> Conference on Non-Operative Treatment of Childhood Scoliosis, Columbia University</span>
-                    <span class="tag"><i class="fa fa-link"></i> <a href="https://www.cobracoders.org/myscolicare" target="_blank" rel="noopener noreferrer">More info.</a></span>
-                    <!-- <span class="tag"><i class="fas fa-trophy"></i> Awards: [Details]</span> -->               
+        <h2>Projects</h2>
+        <div class="publications-list scrollable">
+            <div class="publication">
+                <div class="publication-info">
+                    <h3>Using Non-Expert Data to Robustify Imitation Learning with Offline RL</h3>
+                    <p><i>September 2024 - October 2025</i></p>
+                    <p>Improved performance of imitation learning on non-expert data using offline reinforcement learning. By enforcing Lipschitz continuity on the behavior policy and utilizing data augmentation to widen the action space of the data, stitching between expert and non-expert states was achieved.</p>
+                    <div class="project-details">
+                        <span class="tag"><i class="fas fa-building"></i> WEIRD Lab @ UW</span>
+                        <span class="tag"><i class="fas fa-file-alt"></i> In Review, ICRA 2025</span>
+                        <span class="tag"><i class="fa fa-link"></i> <a href="https://uwrobotlearning.github.io/RISE-offline/" target="_blank" rel="noopener noreferrer">Website</a></span>
                     </div>
-                <p>We developed an Android and iOS app for motivating scoliosis patients to complete Schroth therapy and daily bracing. Our app was endorsed by Dr. Manuel Rigo (MD/PhD), the head of the Barcelona Scoliosis Physical Therapy School. Additionally, we have reached over 100 therapists globally and many scoliosis patients.</p>
-            </div>
-            <div class="project">
-                <h3>PriceNet</h3>
-                <h5>Nov. 2018 – May 2019</h5>
-                <div class="project-details">
-                    <!-- <span class="tag"><i class="fas fa-building"></i> Affiliation: Robot Learning Lab, WEIRD Lab at UW</span> -->
-                    <!-- <span class="tag"><i class="fas fa-file-alt"></i> Publication: [Details]</span> -->
-                    <span class="tag"><i class="fas fa-trophy"></i> 1st place at WSSEF 2019, Naval Science Award, Broadcom MASTERS nominee</span>
                 </div>
-                <p>I designed a fruit ripeness sensor and a reinforcement-learning system that processes sales data and ripeness sensor data to suggest effective selling prices to minimize fruit wastage. I designed a circuit system that detects the color of fruits based on photoresistor signals.  </p>
             </div>
-            <div class="project">
-                <h3>Investigating Cybersecurity in Driverless Cars</h3>
-                <h5>Sept. 2017 – March 2018</h5>
-                <div class="project-details">
-                    <!-- <span class="tag"><i class="fas fa-building"></i> Affiliation: Robot Learning Lab, WEIRD Lab at UW</span>
-                    <span class="tag"><i class="fas fa-file-alt"></i> Publication: [Details]</span> -->
-                    <span class="tag"><i class="fas fa-trophy"></i> 1st place at WSSEF 2018, top 300 Broadcom MASTERS nominee</span>                </div>
-                <p>I built a robotic car by programming an Arduino UNO board, to understand the risk of cyberattacks on driverless cars. I designed and conducted experiments to further investigate how cybersecurity is a real issue for autonomous vehicles.</p>
+
+
+            <div class="publication">
+                <div class="publication-info">
+                    <h3>LLM-based Pain Logging App</h3>
+                    <p><i>January 2025 - Present</i></p>
+                    <p>Developed a pain logging app using Gemini models to process user inputs, display structured pain events, and visualize pain metrics in an intuitive UI. This platform allows users to simply enter in any event (pain levels, medication intake, diet, etc.) and the LLM will categorize events.</p>
+                    <div class="project-details">
+                        <span class="tag"><i class="fas fa-building"></i> UW, Stanford University, University of Pennslyvania</span>
+                        <span class="tag"><i class="fa fa-link"></i> <a href="https://samanthahealth.web.app/" target="_blank" rel="noopener noreferrer">App</a></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="publication">
+                <div class="publication-info">
+                    <h3>Large Language Models for Clinical Predictions</h3>
+                    <p><i>October 2023 – September 2024</i></p>
+                    <p>Developed a chatbot that collects patient information to curate a history of present illness (HPI).</p>
+                    <div class="project-details">
+                        <span class="tag"><i class="fas fa-building"></i> UW, Stanford University, University of Pennsylvania</span>
+                        <span class="tag"><i class="fas fa-file-alt"></i> 2024 International Conference of Health Informatics, 2024 GenAI4Health (NeurIPS)</span>
+                        <span class="tag"><i class="fas fa-trophy"></i> 2nd @ MD Plus Datathon on value-based care</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-info">
+                    <h3>Improving Robotic Car Navigation Algorithms</h3>
+                    <p><i>September 2022 – May 2024</i></p>
+                    <p>Trained convolutional neural networks to predict steering angles to follow a road from simulated data from AirSim. Investigated whether robust training can be achieved with simulated data and less real data, collected from MuSHR cars.</p>
+                    <div class="project-details">
+                        <span class="tag"><i class="fas fa-building"></i> Robot Learning Lab @ UW</span>
+                        <span class="tag"><i class="fas fa-file-alt"></i> 2024 Undergraduate Research Symposium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-info">
+                    <h3>Augmented Reality for Physical Therapy</h3>
+                    <p><i>September 2023 – February 2024</i></p>
+                    <p>Developed a prototype for an AR-based system using the Meta Quest Pro that creates a more immersive and interactive form of doing at-home physical therapy. Created a business plan for the product and pitched at the 2024 Holloman Health Innovation Challenge, UW.</p>
+                    <div class="project-details">
+                        <span class="tag"><i class="fas fa-building"></i> UW CSE, Foster School of Business, UW Medicine</span>
+                        <span class="tag"><i class="fas fa-trophy"></i> Finalist at Holloman Health Innovation Challenge</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-info">
+                    <h3>Repairing Brain-Computer Interfaces (BCI) with Fault-Based Data Acquisition</h3>
+                    <p><i>April 2021 – May 2022</i></p>
+                    <p>Developed a method to improve the accuracy of brain-computer interfaces (BCIs) using fault-based data acquisition. This approach identifies when the BCI is making errors and collects additional training data to correct them.</p>
+                    <div class="project-details">
+                        <span class="tag"><i class="fas fa-building"></i> UW CSE</span>
+                        <span class="tag"><i class="fas fa-file-alt"></i> 2022 International Conference on Software Engineering</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-info">
+                    <h3>Distracted Driver Detection Using EEG</h3>
+                    <p><i>January 2021 – March 2021</i></p>
+                    <p>Designed an ML-based system to predict distracted driving from EEG data. Collected data through a user study where subjects were placed in distracting situations while operating a virtual car. Trained regression models and neural network decoders.</p>
+                    <div class="project-details">
+                        <span class="tag"><i class="fas fa-building"></i> UW CSE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="publication">
+                <div class="publication-info">
+                    <h3>MyScoliCare: An App for Scoliosis Care</h3>
+                    <p><i>November 2018 – May 2019</i></p>
+                    <p>Developed an Android and iOS app for motivating scoliosis patients to complete Schroth therapy and daily bracing. The app was endorsed by Dr. Manuel Rigo (MD/PhD), the head of the Barcelona Scoliosis Physical Therapy School, and has reached over 100 therapists globally and many scoliosis patients.</p>
+                    <div class="project-details">
+                        <span class="tag"><i class="fas fa-file-alt"></i> Conference on Non-Operative Treatment of Childhood Scoliosis, Columbia University</span>
+                        <span class="tag"><i class="fa fa-link"></i> <a href="https://www.cobracoders.org/myscolicare" target="_blank" rel="noopener noreferrer">More info</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-info">
+                    <h3>PriceNet</h3>
+                    <p><i>November 2018 – May 2019</i></p>
+                    <p>Designed a fruit ripeness sensor and a reinforcement-learning system that processes sales data and ripeness sensor data to suggest effective selling prices to minimize fruit wastage. Created a circuit system that detects the color of fruits based on photoresistor signals.</p>
+                    <div class="project-details">
+                        <span class="tag"><i class="fas fa-trophy"></i> 1st place at WSSEF 2019, Naval Science Award, Broadcom MASTERS nominee</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-info">
+                    <h3>Investigating Cybersecurity in Driverless Cars</h3>
+                    <p><i>September 2017 – March 2018</i></p>
+                    <p>Built a robotic car by programming an Arduino UNO board to understand the risk of cyberattacks on driverless cars. Designed and conducted experiments to investigate how cybersecurity is a real issue for autonomous vehicles.</p>
+                    <div class="project-details">
+                        <span class="tag"><i class="fas fa-trophy"></i> 1st place at WSSEF 2018, top 300 Broadcom MASTERS nominee</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
- 
-    
+   
         
     <section id="experience" class="fade-in-section">
         <h2>Work Experience</h2>
-        <div class="experience">
-            <h3>Neurophys [Software Developer]</h3>
-            <h5>Aug. 2024 - Present</h5>
-            <p>I am desigining AI-based technology for developing customized, at-home rehabilitation plans for patients recovering from neuro deficits.</p>
-        </div>
-        <div class="experience">
-            <h3>Supio [Software Engineering Intern]</h3>
-            <h5>June 2025 - Aug. 2025</h5>
-            <p>I contributed to developing a platform that allows internal users to easily fine-tune LLMs. Using AWS S3 for data storage and AWS EC2 instances for training, we abstracted away the complications of data generation, training, and evaluationg. </p>
-        </div>
-        <div class="experience">
-            <h3>Paul Allen School of Computer Science [Teaching Assistant]</h3>
-            <h5>Sept. 2023 - Present</h5>
-            <p>I am a 5th time teaching assistant (TA) for machine learning, discrete math, and probability classes for computer science. As part of being a TA, I lead weekly ~30 student sections, assist students through office hours and 1-1 sessions, help with course logistics (e.g., running the website), host review sessions, and proctor exams.</p>
-        </div>
-        <div class="experience">
-            <h3>Banyan Computing [Backend Developer Intern]</h3>
-            <h5>Sept. 2021 – April 2022</h5>
-            <p>At Banyan, I developed Banyan Processes, a feature that enables users to save Julia scripts to the cloud and schedule them for later execution. Additionally, I implemented features to allow users to manage their cloud spending.</p>
+        <div class="experience-container">
+            <div class="experience">
+                <h3>Supio</h3>
+                <h5>Software Engineering Intern | June 2025 - Aug. 2025</h5>
+                <p>I contributed to developing a platform that allows internal users to easily fine-tune LLMs. Using AWS S3 for data storage and AWS EC2 instances for training, we abstracted away the complications of data generation, training, and evaluation.</p>
+            </div>
+            
+            <div class="experience">
+                <h3>Paul Allen School of Computer Science</h3>
+                <h5>Teaching Assistant | Sept. 2023 - Present</h5>
+                <p>I am a 5th time teaching assistant (TA) for machine learning, discrete math, and probability classes for computer science. As part of being a TA, I lead weekly ~30 student sections, assist students through office hours and 1-1 sessions, help with course logistics (e.g., running the website), host review sessions, and proctor exams.</p>
+            </div>
+            
+            <div class="experience">
+                <h3>Neurophys</h3>
+                <h5>Software Developer | Aug. 2024 - Sept. 2025</h5>
+                <p>I developed and trained ML models that detect stroke in patient voice recordings with limited data.</p>
+            </div>
+            
+            <div class="experience">
+                <h3>Banyan Computing</h3>
+                <h5>Backend Developer Intern | Sept. 2021 – April 2022</h5>
+                <p>At Banyan, I developed Banyan Processes, a feature that enables users to save Julia scripts to the cloud and schedule them for later execution. Additionally, I implemented features to allow users to manage their cloud spending.</p>
+            </div>
         </div>
     </section>
 
@@ -294,7 +307,7 @@
                     <span class="skill-tag">React JS</span>
                     <span class="skill-tag">Julia</span>
                     <span class="skill-tag">C</span>
-                    <span class="skill-tag">System Verilog</span>
+                    <span class="skill-tag">SQL</span>
                 </div>
             </div>
             <div class="skill-category">
@@ -333,6 +346,9 @@
           </a>
           <a href="https://scholar.google.com/citations?user=g5P1vpQAAAAJ&hl=en" target="_blank" aria-label="Scholar">
             <i class="fas fa-graduation-cap"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/cleah-winston/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
           </a>
         </div>
         <p>&copy; 2025 Cleah Winston. All rights reserved.</p>
