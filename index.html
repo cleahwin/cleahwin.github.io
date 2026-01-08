@@ -7,51 +7,39 @@
     <title>Cleah Winston</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/W.jpg" type="image/jpg">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header style="position: fixed; top: 0; width: 100%; z-index: 1000; background-color: #201637; color: white; height: 70px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px;">
-        <nav class="navbar">
-          <h1 class="logo" style="margin: 0;"><a href="/" style="text-decoration: none; color: white;">Cleah Winston</a></h1>
-          <ul style="list-style: none; display: flex; gap: 20px; margin: 0;">
-            <li><a href="#publications" >Publications</a></li>
-            <li><a href="#projects" >Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills" >Skills</a></li>
-            <li><a href="#contact" >Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-      <!-- Add padding to avoid overlap -->
-      <div style="height: 70px;"></div>
-      
-
-      <section class="split-screen">
-        <div class="left-section">
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="profile-image-container">
+          <img src="WinstonCleah.jpeg" alt="Cleah Winston" class="profile-image">
+        </div>
+        <div class="hero-text">
           <h1>Cleah Winston</h1>
-          <p>B.S./M.S. in Computer Science @ University of Washington</p>
-          <p>Robotics Research Student @ UW Robotics</p>
-          <p>Teaching Assistant @ Paul Allen School, UW</p>
-          <!-- <div class="profile-image-container">
-            <img src="cleahwinston.jpg" alt="Cleah Winston" class="profile-image">
-          </div> -->
-          
-          
+          <p class="affiliation">B.S./M.S. in Computer Science @ University of Washington</p>
+          <p class="affiliation">Robotics Research Student @ UW Robotics</p>
+          <p class="affiliation">Teaching Assistant @ Paul Allen School, UW</p>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> cleahw@cs.washington.edu</p>
+          </div>
           <div class="social-icons">
             <a href="https://github.com/cleahwin" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="mailto:cleahw@uw.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
             <a href="https://scholar.google.com/citations?user=g5P1vpQAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-            <a href="ResumeWinstonCleah.pdf" aria-label="Resume" target="_blank"><i class="fas fa-file-pdf"></i></a>
+            <a href="WinstonCleah.pdf" aria-label="Resume" target="_blank"><i class="fas fa-file-pdf"></i></a>
             <a href="https://www.linkedin.com/in/cleah-w-8897a3242/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
-        <div class="right-section">
-          <h2>About Me</h2>
-          <p>I'm an undergraduate at the University of Washington, Seattle, pursuing a B.S./M.S. in Computer Science with a minor in Business Administration. I conduct research on reinforcement learning and robotics, advised by Abhishek Gupta. I'm interested in making robot policies that are sample efficient and use data effectively, whether it be through utilization of non-expert data or through combining offline and online data. I've also explored using large language models to enhance the clinical workflow and patient care. Broadly, I'm passionate about using AI to drive real-world impact and improve the efficiency of complex systems.</p>
-        </div>
-      </section>
+      </div>
+      <div class="bio-section">
+        <p>Hello! I'm an undergraduate at the University of Washington, Seattle, pursuing a B.S./M.S. in Computer Science with a minor in Business Administration. I do research in reinforcement learning and robotics, advised by Prof. 
+            Abhishek Gupta. I'm interested in making robot policies that are sample efficient and use data effectively, whether it be through utilization of non-expert data or through combining offline and online data. I've also explored using large language models to enhance the clinical workflow and patient care. Broadly, I'm passionate about using AI to drive real-world impact and improve the efficiency of complex systems.</p>
+      </div>
+    </section>
 
     <section id="publications" class="fade-in-section">
         <h2>Publications</h2>
@@ -78,8 +66,10 @@
             </div>
 
             <div class="publication">
-                <div class="publication-image">
-                    <img src="images/genai.png" alt="Medical Question-Generation for Pre-Consultation">
+                <div class="publication-media">
+                    <div class="publication-image">
+                        <img src="images/genai.png" alt="Medical Question-Generation for Pre-Consultation">
+                    </div>
                 </div>
                 <div class="publication-info">
                     <h3>Medical Question-Generation for Pre-Consultation with LLM In-Context Learning</h3>
@@ -92,8 +82,10 @@
             </div>
     
             <div class="publication">
-                <div class="publication-image">
-                    <img src="images/ichi.png" alt="Multimodal Clinical Prediction">
+                <div class="publication-media">
+                    <div class="publication-image">
+                        <img src="images/ichi.png" alt="Multimodal Clinical Prediction">
+                    </div>
                 </div>
                 <div class="publication-info">
                     <h3>Multimodal Clinical Prediction with Unified Prompts and Pretrained Large-Language Models</h3>
@@ -106,8 +98,10 @@
             </div>
     
             <div class="publication">
-                <div class="publication-image">
-                    <img src="images/icse.png" alt="Repairing Brain-Computer Interfaces">
+                <div class="publication-media">
+                    <div class="publication-image">
+                        <img src="images/icse.png" alt="Repairing Brain-Computer Interfaces">
+                    </div>
                 </div>
                 <div class="publication-info">
                     <h3>Repairing Brain-Computer Interfaces with Fault-Based Data Acquisition</h3>
@@ -120,8 +114,10 @@
             </div>
     
             <div class="publication">
-                <div class="publication-image">
-                    <img src="images/icse.png" alt="Precisely Detecting and Resolving BCI Errors">
+                <div class="publication-media">
+                    <div class="publication-image">
+                        <img src="images/icse.png" alt="Precisely Detecting and Resolving BCI Errors">
+                    </div>
                 </div>
                 <div class="publication-info">
                     <h3>Precisely Detecting and Resolving BCI Errors With Case Functions</h3>
@@ -140,7 +136,7 @@
     
     <section id="projects" class="fade-in-section">
         <h2>Projects</h2>
-        <div class="publications-list scrollable">
+        <div class="projects-list">
             <div class="publication">
                 <div class="publication-info">
                     <h3>Using Non-Expert Data to Robustify Imitation Learning with Offline RL</h3>
@@ -277,7 +273,7 @@
             <div class="experience">
                 <h3>Paul Allen School of Computer Science</h3>
                 <h5>Teaching Assistant | Sept. 2023 - Present</h5>
-                <p>I am a 5th time teaching assistant (TA) for machine learning, discrete math, and probability classes for computer science. As part of being a TA, I lead weekly ~30 student sections, assist students through office hours and 1-1 sessions, help with course logistics (e.g., running the website), host review sessions, and proctor exams.</p>
+                <p>I am a 8th time teaching assistant (TA) for machine learning, discrete math, and probability classes for computer science. As part of being a TA, I lead weekly ~30 student sections, assist students through office hours and 1-1 sessions, help with course logistics (e.g., running the website), host review sessions, and proctor exams.</p>
             </div>
             
             <div class="experience">
@@ -336,22 +332,7 @@
       </section>
        -->
     <footer>
-        <h2>Contact</h2>
-        <div class="contact-icons">
-          <a href="mailto:cleahw@uw.edu" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="https://github.com/cleahwin" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://scholar.google.com/citations?user=g5P1vpQAAAAJ&hl=en" target="_blank" aria-label="Scholar">
-            <i class="fas fa-graduation-cap"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/cleah-winston/" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-        <p>&copy; 2025 Cleah Winston. All rights reserved.</p>
+        <p>&copy; 2025 Cleah Winston</p>
     </footer>
 </body>
 </html>
