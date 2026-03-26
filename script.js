@@ -68,4 +68,63 @@ document.addEventListener('DOMContentLoaded', () => {
             content.style.display = content.style.display === "block" ? "none" : "block";
         });
     });
+
+    // Publications: show selected vs show all
+    const publicationsToggle = document.getElementById('publicationsToggle');
+    const publicationCards = document.querySelectorAll('#publications .publication');
+
+    const applyPublicationsFilter = (showAll) => {
+        publicationCards.forEach((card) => {
+            const isSelected = card.dataset.selected === 'true';
+            const shouldShow = showAll || isSelected;
+            card.style.display = shouldShow ? '' : 'none';
+        });
+    };
+
+    if (publicationsToggle && publicationCards.length > 0) {
+        let showAll = false;
+        applyPublicationsFilter(showAll);
+
+        publicationsToggle.addEventListener('click', () => {
+            showAll = !showAll;
+            applyPublicationsFilter(showAll);
+            publicationsToggle.setAttribute('aria-pressed', showAll ? 'true' : 'false');
+            publicationsToggle.textContent = showAll ? 'Show selected' : 'Show all';
+        });
+    }
+
+    // Projects carousel arrows (desktop/tablet)
+    const projectsCarousel = document.querySelector('#projects .projects-carousel');
+    if (projectsCarousel) {
+        const track = projectsCarousel.querySelector('.projects-list');
+        const leftBtn = projectsCarousel.querySelector('.carousel-arrow-left');
+        const rightBtn = projectsCarousel.querySelector('.carousel-arrow-right');
+
+        const getPageScroll = () => {
+            if (!track) return 0;
+            const styles = window.getComputedStyle(track);
+            const gap = Number.parseFloat(styles.columnGap || styles.gap || '16') || 16;
+            // Scroll by one "page" (4 cards on desktop, 2 on tablet)
+            return Math.max(1, track.clientWidth - gap);
+        };
+
+        const updateArrows = () => {
+            if (!track || !leftBtn || !rightBtn) return;
+            const maxScrollLeft = track.scrollWidth - track.clientWidth;
+            leftBtn.disabled = track.scrollLeft <= 1;
+            rightBtn.disabled = track.scrollLeft >= maxScrollLeft - 1;
+        };
+
+        const scrollByPage = (direction) => {
+            if (!track) return;
+            const amount = getPageScroll() * direction;
+            track.scrollBy({ left: amount, behavior: 'smooth' });
+        };
+
+        if (leftBtn) leftBtn.addEventListener('click', () => scrollByPage(-1));
+        if (rightBtn) rightBtn.addEventListener('click', () => scrollByPage(1));
+        if (track) track.addEventListener('scroll', () => window.requestAnimationFrame(updateArrows), { passive: true });
+        window.addEventListener('resize', updateArrows);
+        updateArrows();
+    }
 });

@@ -22,7 +22,7 @@
         <div class="hero-text">
           <h1>Cleah Winston</h1>
           <p class="affiliation">B.S./M.S. in Computer Science @ University of Washington</p>
-          <p class="affiliation">Robotics Research Student @ UW Robotics</p>
+          <p class="affiliation">Robotics Research @ <a class="inline-link" href="https://weirdlab.cs.washington.edu" target="_blank" rel="noopener noreferrer">WEIRD Lab</a></p>
           <p class="affiliation">Teaching Assistant @ Paul Allen School, UW</p>
           <div class="contact-info">
             <p><i class="fas fa-envelope"></i> cleahw@cs.washington.edu</p>
@@ -36,15 +36,19 @@
         </div>
       </div>
       <div class="bio-section">
-        <p>Hello! I'm an undergraduate at the University of Washington, Seattle, pursuing a B.S./M.S. in Computer Science with a minor in Business Administration. I do research in reinforcement learning and robotics, advised by Prof. 
-            Abhishek Gupta. I'm interested in making robot policies that are sample efficient and use data effectively, whether it be through utilization of non-expert data or through combining offline and online data. I've also explored using large language models to enhance the clinical workflow and patient care. Broadly, I'm passionate about using AI to drive real-world impact and improve the efficiency of complex systems.</p>
+        <p>Hello! I'm masters student at the University of Washington, Seattle, in Computer Science. I completed my undergraduate degree in Winter 2026 with a minor in Business Administration. I do research in reinforcement learning and robotics at the <a class="inline-link" href="https://weirdlab.cs.washington.edu" target="_blank" rel="noopener noreferrer">WEIRD Lab</a>, advised by Prof. <a class="inline-link" href="https://homes.cs.washington.edu/~abhgupta/" target="_blank" rel="noopener noreferrer">Abhishek Gupta</a>. I'm interested in training robot policies that are sample-efficient and adapt to new environments, by leveraging non-expert data and by combining offline and online data. I've also explored using large language models to enhance clinical workflows and patient care. Broadly, I'm passionate about using AI to drive real-world impact and improve the efficiency of complex systems.</p>
       </div>
     </section>
 
     <section id="publications" class="fade-in-section">
         <h2>Publications</h2>
+        <div class="publications-controls">
+            <button id="publicationsToggle" class="publications-toggle" type="button" aria-pressed="false">
+                Show all
+            </button>
+        </div>
         <div class="publications-list scrollable">
-            <div class="publication" data-has-video="true">
+            <div class="publication" data-has-video="true" data-selected="true">
                 <div class="publication-media">
                     <div class="publication-image">
                         <img src="images/rise.png" alt="RISE Project">
@@ -56,7 +60,7 @@
                 </div>
                 <div class="publication-info">
                     <h3>Using Non-Expert Data to Robustify Imitation Learning via Offline Reinforcement Learning</h3>
-                    <p><i>In Review, ICRA 2025</i></p>
+                    <p><i>ICRA 2026</i></p>
                     <p>Kevin Huang*, Rosario Scalise*, <b>Cleah Winston</b><span class="et-al">, et al. <a href="#" class="show-more">[show all]</a></span><span class="all-authors" style="display: none;">, Ayush Agrawal, Yunchu Zhang, Rohan Baijal, Markus Grotz, Byron Boots, Benjamin Burchfiel, Hongkai Dai, Masha Itkina, Paarth Shah, Abhishek Gupta <a href="#" class="show-less">[show less]</a></span></p>
                     <div class="publication-links">
                         <a href="https://arxiv.org/abs/2510.19495" target="_blank">Paper</a>
@@ -65,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="publication">
+            <div class="publication" data-selected="true">
                 <div class="publication-media">
                     <div class="publication-image">
                         <img src="images/genai.png" alt="Medical Question-Generation for Pre-Consultation">
@@ -136,7 +140,11 @@
     
     <section id="projects" class="fade-in-section">
         <h2>Projects</h2>
-        <div class="projects-list">
+        <div class="projects-carousel" aria-label="Projects carousel">
+            <button class="carousel-arrow carousel-arrow-left" type="button" aria-label="Scroll projects left">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="projects-list" tabindex="0" aria-label="Projects">
             <div class="publication">
                 <div class="publication-info">
                     <h3>Using Non-Expert Data to Robustify Imitation Learning with Offline RL</h3>
@@ -144,7 +152,7 @@
                     <p>Improved performance of imitation learning on non-expert data using offline reinforcement learning. By enforcing Lipschitz continuity on the behavior policy and utilizing data augmentation to widen the action space of the data, stitching between expert and non-expert states was achieved.</p>
                     <div class="project-details">
                         <span class="tag"><i class="fas fa-building"></i> WEIRD Lab @ UW</span>
-                        <span class="tag"><i class="fas fa-file-alt"></i> In Review, ICRA 2025</span>
+                        <span class="tag"><i class="fas fa-file-alt"></i> ICRA 2026</span>
                         <span class="tag"><i class="fa fa-link"></i> <a href="https://uwrobotlearning.github.io/RISE-offline/" target="_blank" rel="noopener noreferrer">Website</a></span>
                     </div>
                 </div>
@@ -256,6 +264,10 @@
                     </div>
                 </div>
             </div>
+            </div>
+            <button class="carousel-arrow carousel-arrow-right" type="button" aria-label="Scroll projects right">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
         </div>
     </section>
 
@@ -265,15 +277,15 @@
         <h2>Work Experience</h2>
         <div class="experience-container">
             <div class="experience">
+                <h3>Paul Allen School of Computer Science</h3>
+                <h5>Teaching Assistant | Sept. 2023 - Present</h5>
+                <p>I am a 9th time teaching assistant (TA) for machine learning, discrete math, and probability classes for computer science. As part of being a TA, I lead weekly ~30 student sections, assist students through office hours and 1-1 sessions, help with course logistics (e.g., running the website), host review sessions, and proctor exams.</p>
+            </div>
+
+            <div class="experience">
                 <h3>Supio</h3>
                 <h5>Software Engineering Intern | June 2025 - Aug. 2025</h5>
                 <p>I contributed to developing a platform that allows internal users to easily fine-tune LLMs. Using AWS S3 for data storage and AWS EC2 instances for training, we abstracted away the complications of data generation, training, and evaluation.</p>
-            </div>
-            
-            <div class="experience">
-                <h3>Paul Allen School of Computer Science</h3>
-                <h5>Teaching Assistant | Sept. 2023 - Present</h5>
-                <p>I am a 8th time teaching assistant (TA) for machine learning, discrete math, and probability classes for computer science. As part of being a TA, I lead weekly ~30 student sections, assist students through office hours and 1-1 sessions, help with course logistics (e.g., running the website), host review sessions, and proctor exams.</p>
             </div>
             
             <div class="experience">
@@ -332,7 +344,7 @@
       </section>
        -->
     <footer>
-        <p>&copy; 2025 Cleah Winston</p>
+        <p>&copy; 2026 Cleah Winston</p>
     </footer>
 </body>
 </html>
