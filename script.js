@@ -44,20 +44,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Handle video playback on hover
+    // Handle video playback on hover (skip quietly if media isn't ready yet)
     const videoContainers = document.querySelectorAll('.publication[data-has-video="true"]');
     videoContainers.forEach(container => {
         const video = container.querySelector('video');
-        
+        if (!video) return;
+
         container.addEventListener('mouseenter', () => {
-            video.play().catch(error => {
-                console.error('Error playing video:', error);
-            });
+            video.play().catch(() => {});
         });
-        
+
         container.addEventListener('mouseleave', () => {
             video.pause();
-            video.currentTime = 0; // Reset to beginning
+            video.currentTime = 0;
         });
     });
 
